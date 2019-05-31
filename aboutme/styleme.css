@@ -30,3 +30,6 @@ ul.a {
   dd{
     text-indent:30px;
   }
+  dt{
+    color: #908080;
+  }
