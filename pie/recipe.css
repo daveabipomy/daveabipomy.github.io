@@ -1,7 +1,16 @@
+*{
+	margin:0px;
+	padding: 0px;
+	font-size:100%;
+	
+	/*background-repeat: repeat-x;
+	background-repeat: repeat-y;*/
+}
+
 body{
 	background-color: white;
 	color: #404040; 
-	font-size:11pt;
+	font-size:12pt;
 	font-family: Georgia,Garamond,sans-serif;
 	margin-left: 40px;
 	background-image: url("silverware.jpg");
@@ -36,7 +45,10 @@ ul {
     list-style-image: url('pie_icon.gif');
   }
    
-
+  span{
+    font-weight: bold;
+  
+  }
 
   .heading{
     background-color: #D0D3D4  ;
