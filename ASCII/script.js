@@ -1,11 +1,10 @@
+'use strict';
+let delay = 250;
+let timerID = "";
 
-"use strict";
-var delay = 250;
-var timerID = "";
-var originalText = "";
 
 function setSize(){
-    var selectedSizeIndex = document.getElementById("size").selectedIndex;
+    let selectedSizeIndex = document.getElementById("size").selectedIndex;
     if(selectedSizeIndex == "0"){ document.getElementById("play").style.fontSize = "7pt";  }
     else if(selectedSizeIndex == "1"){ document.getElementById("play").style.fontSize = "10pt";  }
     else if(selectedSizeIndex == "2"){ document.getElementById("play").style.fontSize = "12pt";  } 
@@ -34,7 +33,7 @@ function animationStart(){
     document.getElementById("animtype").disabled = true;
     clearInterval(timerID);
     originalText = document.getElementById("play").value;
-    var animationType = document.getElementById("animtype").value;
+    let animationType = document.getElementById("animtype").value;
     
     if(animationType == "juggler")
     { 
@@ -61,19 +60,19 @@ function animationStart(){
 function displayAnimation(animationType){
    if(animationType == "juggler")
    {
-        var splitted = ANIMATIONS["juggler"].split("=====\n");        
+        let splitted = ANIMATIONS["juggler"].split("=====\n");        
     }
     else if(animationType=="exercise")
     {
-        var splitted = ANIMATIONS["exercise"].split("=====\n");  
+        let splitted = ANIMATIONS["exercise"].split("=====\n");  
     }   
     else if(animationType=="dive")
     {
-        var splitted = ANIMATIONS["dive"].split("=====\n");  
+        let splitted = ANIMATIONS["dive"].split("=====\n");  
     }  
     else if(animationType=="bike")
     {
-        var splitted = ANIMATIONS["bike"].split("=====\n");  
+        let splitted = ANIMATIONS["bike"].split("=====\n");  
     } 
     else
     {
@@ -82,7 +81,7 @@ function displayAnimation(animationType){
 
    
 
-    var i=0;
+    let i=0;
     timerID=setInterval(
         function dis()
     {
