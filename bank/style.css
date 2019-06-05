@@ -1,0 +1,24 @@
+body{
+    background-color:#DCDCDC;
+}
+
+#content
+{
+    width:800px;
+    margin: auto;
+    padding-top: 100px;  
+    
+}
+fieldset{
+    background-color:rgb(209, 193, 193);  
+}
+
+legend{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#result{
+    height: 200px;
+    width: 400px;
+}

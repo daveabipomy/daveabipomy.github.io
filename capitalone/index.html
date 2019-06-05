@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Apply for a Capital One Card</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<header >
+		<div class="header1">
+			<a href="https://www.capitalone.com/"><img id="im1" src="https://applynow.capitalone.com/images/capitalone_logo_fullres.png" width="120px" height="60px" alt="image" /></a>
+			<span style="width:1px;height:45px; right: 0px;top: 4px;position: absolute; padding-right: 40px;"></span>
+			<img src="https://applynow.capitalone.com/images/Visa_logo.png" width="60px" height="50px" alt="image" />
+		</div>
+		<div class="header2">
+			<div class="clearfixheader2">
+				<div class="header2common left">
+					Venture One &reg;
+				</div>
+				<div class="header2common right">
+					<p>Earn unlimited 1.25 miles per dollar on every purchase, every day with no annual fee</p>
+				</div>
+			</div>
+			<div style="margin-top: 20px;">
+			<img src="https://applynow.capitalone.com/images/locked.png" alt="image" /> <a href="https://applynow.capitalone.com/?productId=3126#"><span style="color: white;text-decoration: 1px dotted white; ">SECURITY</span></a>
+			<i class="fa fa-question-circle" style="font-size:30px;color:white;padding-left: 50px;"></i> <span style="color: white">FAQ</span>
+			</div>
+		</div>
+	</header>
+
+	<div class="content">
+
+	<form>
+
+
+		<fieldset>
+			<legend>Personal Information</legend>
+			<div class="clearfixfieldset1">
+				<div class="pinfo info">
+					<pre>FIRST NAME               MI             LAST NAME   </pre><br />
+					<input id="firstname" type="text" name="firstname">
+					<input id="middlename" type="text" name="middlename">
+					<input type="text" name="lastname"> <br /><br />
+					<pre>DATE OF BIRTH                           SOCIAL SECURITY NUMBER    </pre><br />
+					<input type="text" name="bdate">
+					<input type="text" name="socialsecnum">
+					<br />
+					<br />
+					<span style="padding-right: 40px;font-size: 14px;margin-top: 20px;">ARE YOU A U.S. CITIZEN?</span>
+					<input type="radio" name="select">YES
+					<input type="radio" name="select">NO <br />
+					<a href="https://applynow.capitalone.com/?productId=3126#citExplanation-icon" style="font-size: 12px;text-decoration: none;">WHY ARE YOU ASKING ME THIS?</a>
+
+				</div>
+				<div class="pinfo imagepart">
+					<img src="https://applynow.capitalone.com/images/ventureone/VentureOneCard_2017-04-12_sm.png" alt="image" height="150px" width="250px" />
+				</div>
+			</div>
+			<hr />
+
+			<legend >Contact Information</legend>
+			<pre> RESIDENTIAL ADDRESS (No PO Boxes or CMRA)                                              SUITE/APT. # (if applicable)</pre><br />
+			<input style="width:620px; padding-right: 10px;margin-left: 10px;" id="residentialaddress" type="text" name="residentialaddress">
+			<input style="padding-left: 10px;width:220px" id="suiteaptnum" type="text" name="suiteaptnum"> <br /><br />
+			<a style="font-size: 18px;margin-left: 10px;text-decoration: none;" href="https://applynow.capitalone.com/?productId=3126#">+ Add mailing address (if different from residential address)</a><br/><br />
+			<pre> EMAIL ADDRESS                                                PRIMARY PHONE NUMBER</pre><br />
+			<input type="EMAIL" name="email">
+			<input type="PHONE" name="phonenumber">
+			<p style="padding-top: 5px;padding-bottom: 60px;margin-left: 10px;"> When you provide your email address, we may use it to send you important information about your application and account(s), as well as other useful products and services.</p>
+			<hr />
+
+			<legend >Financial Information</legend>
+			<pre>EMPLOYMENT STATUS</pre>
+				<input style="margin-left: 10px;" list="status">
+					<datalist id="status" placeholder="select status">
+						<option value="Employed"></option>
+						<option value="Self-Employed"></option>
+						<option value="Retired"></option>
+						<option value="Student"></option>
+						<option value="Unemployed"></option>
+						<option value="Other"></option>
+						
+					</datalist>
+					<br />
+					<p style="color:red;margin-bottom: 30px;">Please select your Employment Status</p>
+					<pre> TOTAL ANNUAL INCOME                                          MONTHLY RENT/MORTGAGE   </pre><br />
+					<input id="income" type="text" name="income" style="margin-left: 10px;"/>
+					<input id="mortgage" type="text" name="mortgage" />
+					<p style="padding-left: 10px;margin-top: 5px;margin-bottom: 40px;">Alimony, child support or separate maintenance income need not be revealed if you do not choose to have it considered as a basis for repaying this loan.</p>
+
+					<pre>DO YOU HAVE ANY BANK ACCOUNTS?      CREDIT CARD SPEND PER MONTH</pre>
+					<input id="bankingaccounts" list="bankingaccounts" />
+						<datalist id="bankingaccounts">
+							<option value="Checking and Savings"></option>
+							<option value="Checking Only"></option>
+							<option value="Savings Only"></option>
+							<option value="Niether"></option>
+						</datalist>
+
+
+		</fieldset>
+
+	</form>
+
+	</div>
+
+
+</body>
+</html>
