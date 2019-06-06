@@ -1,3 +1,5 @@
+var namespace=(function(){
+
 var i=0;
 window.onload=function(){
 	
@@ -5,11 +7,14 @@ window.onload=function(){
 	document.getElementById("getReport").onclick=summaryReport;
 };
 
+
+
 function start()
 {      
+   
     var accountName=document.getElementById("accountName").value;
-    var deposit=document.getElementById("deposit").value;   
-    var bankAccount =account(accountName,deposit);
+    var deposit=document.getElementById("deposit").value;     
+    var bankAccount=account.account(accountName,deposit);       
     if(i==0)
     {
     document.getElementById("result").value='Account Name: '+bankAccount.getAccount()+' '+bankAccount.getBalance();
@@ -21,33 +26,29 @@ function start()
     }
 }
 
- function account(accountName,initialBalance){ 
+var account = (function(accountName,initialBalance) {
+  'use strict';
+  return {
+    account: function(accountName,initialBalance){ 
   
-    var balance = initialBalance;  
-    var account=accountName;
-    return {
-      getBalance: function(){
-        return balance
-      },
-      getAccount: function(){               
-        return account;
-      }  
+      var balance = initialBalance;  
+      var account=accountName;
+      return {
+        getBalance: function(){
+          return balance
+        },
+        getAccount: function(){               
+          return account;
+        }  
+      }
     }
-  }
-
-
-  var moduleName = (function () {
-    var privateVariable = 'private';
-
-    var privateMethod = function () {
-        alert('this is private');
-    };
-
-    // this is the "revealed" part of the module
-    return { 
-        publicVariable: 'public',
-        publicMethod: function () {
-            alert('this is public');
-        }
-    };
+    
+  };
 }());
+
+
+
+}());
+
+namespace();
+
