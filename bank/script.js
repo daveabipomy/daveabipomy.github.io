@@ -1,17 +1,12 @@
-var namespace=(function(){
+(function(){
 
 var i=0;
-window.onload=function(){
-	
+window.onload=function(){	
 	document.getElementById("button").onclick=start;
 	document.getElementById("getReport").onclick=summaryReport;
 };
-
-
-
 function start()
-{      
-   
+{         
     var accountName=document.getElementById("accountName").value;
     var deposit=document.getElementById("deposit").value;     
     var bankAccount=account.account(accountName,deposit);       
@@ -50,5 +45,4 @@ var account = (function(accountName,initialBalance) {
 
 }());
 
-namespace();
 
