@@ -1,0 +1,95 @@
+
+
+body, button {
+	font-family: cursive;
+	font-size: 14pt;
+	text-align: center;
+}
+
+/* The area that holds the 15 puzzle pieces. */
+#puzzlearea {
+    background-image: url("http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg");
+	font-size: 40pt;
+	width: 380px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+    position: relative;
+    /* border: 1px solid black; */
+    
+}
+.boxClear
+{
+    width:80px;
+    height: 100px;
+    float: left;
+    background-color: white;   
+    
+}
+.box{
+    float: left;  
+    width:90px;
+    height: 100px;
+    border:1px solid black;
+}
+
+
+/* This class should be applied to each of the 15 puzzle pieces. */
+.puzzlepiece {
+	background-image: url(background.jpg);
+
+	width: 100px;
+	height: 90px;
+	position: absolute;
+}
+
+
+
+/* This class should be applied to a puzzle piece that can be moved. */
+.movablepiece:hover {
+	border-color: red;
+	color: red;
+}
+
+/* grading styles -- for TAs only; not required by students */
+#gradingarea {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 999999;
+}
+
+.valid {
+	background-color: #bfb;
+}
+
+.invalid {
+	background-color: #f88;
+}
+
+/*
+init = function() {
+    var puzzleArea = document.getElementById('puzzlearea');
+    var divs = puzzleArea.getElementsByTagName("div");
+      
+    // initialize each piece
+    for (var i=0; i< divs.length; i++) {
+        var div = divs[i];
+        
+        // calculate x and y for this piece
+        var x = ((i % 4) * 100) ;
+        var y = (Math.floor(i / 4) * 100) ;
+
+        // set basic style and background
+        div.className = "puzzlepiece";
+        div.style.left = x + 'px';
+        div.style.top = y + 'px';
+        div.style.backgroundImage = 'url("background.jpg")';
+        div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
+        
+        // store x and y for later
+        div.x = x;
+        div.y = y; 
+    }        
+};
+*/

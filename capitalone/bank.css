@@ -1,0 +1,137 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #fafafa;
+	font-size: 16px;
+}
+
+.header1{
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.header2{
+	background-image: url(https://applynow.capitalone.com/images/ventureone/ventureone-bg.jpg);
+	height: 270px;
+	width: 100%;
+	background-repeat: repeat-x;
+	margin: auto;
+	text-align: center;
+
+}
+.header2common{
+	float: left;
+	color: white;
+	padding: 3px;
+	
+	
+}
+.left{
+	width: 45%;
+	text-align: right;
+	padding-right: 15px;
+	font-size: 50px;
+	padding-top: 70px;
+}
+.right{
+	width: 45%;
+	text-align: left;
+	padding-left: 15px;
+	font-size: 24px;
+	padding-top:70px;
+}
+.clearfixheader2:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+p{
+	width: 390px;
+}
+
+.content{
+	width: 70%;
+	margin: auto;
+	background-color: white;
+}
+
+
+.pinfo{
+	float: left;
+	padding: 5px;
+}
+.info{
+	width: 70%;
+}
+.imagepart{
+	width: 25%;
+}
+
+.clearfixfieldset1:after{
+	content: "";
+	display: block;
+	clear: both;
+	margin-bottom: 40px;
+}
+input[type="text"]{
+	margin-right: 40px;
+	height: 40px;
+	width: 265px;
+}
+legend{
+	text-align: center;
+	font-size: 28px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+fieldset{
+	border:none;
+	margin-top: 40px;
+}
+pre{
+	font-size: 14px;
+}
+#firstname{
+	width: 150px;
+}
+#middlename{
+	width:70px;
+}
+input[type="radio"]{
+	font-size: 14px;
+}
+input[type="EMAIL"]{
+	margin-right: 40px;
+	margin-left: 10px;
+	height: 40px;
+	width: 425px;
+}
+input[type="PHONE"]{
+	margin-right: 40px;
+	height: 40px;
+	width: 420px;
+	margin-right: 10px;
+}
+input #residentialaddress{
+	width:200px;
+}
+#suiteaptnum{
+	width: 300px;
+}
+input[list]{
+	width:95%;
+	margin-right: 10px;
+	height: 40px;
+}
+#income,#mortgage{
+
+	width: 425px;
+}
+input #bankingaccounts{
+	width:420px;
+}
+
