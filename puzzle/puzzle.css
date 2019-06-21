@@ -1,95 +1,67 @@
+/*
+CSE 190 M, Spring 2009, Marty Stepp
+Homework 6 (Fifteen Puzzle) style sheet
+*/
 
+body {
+    background-color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
 
-body, button {
-	font-family: cursive;
-	font-size: 14pt;
-	text-align: center;
+#controls,
+#overall,
+#puzzlearea {
+    width: 400px;
+}
+
+#controls {
+    padding-top: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+/* Used to center the puzzle. */
+#overall {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* The area that holds the 15 puzzle pieces. */
 #puzzlearea {
-    background-image: url("http://mumstudents.org/cs472/2019-06-RS/Homework/9puzzle/resources/background.jpg");
-	font-size: 40pt;
-	width: 380px;
-	height: 400px;
-	margin-left: auto;
-	margin-right: auto;
+    font-size: 32px;
+    height: 400px;
+    padding: 0px;
     position: relative;
-    /* border: 1px solid black; */
-    
 }
-.boxClear
-{
-    width:80px;
-    height: 100px;
-    float: left;
-    background-color: white;   
-    
-}
-.box{
-    float: left;  
-    width:90px;
-    height: 100px;
-    border:1px solid black;
-}
-
 
 /* This class should be applied to each of the 15 puzzle pieces. */
 .puzzlepiece {
-	background-image: url(background.jpg);
-
-	width: 100px;
-	height: 90px;
-	position: absolute;
+    background-image: url(background.jpg);
+    border: 2px solid black;
+    height: 96px;
+    line-height: 96px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 96px;
 }
-
-
 
 /* This class should be applied to a puzzle piece that can be moved. */
 .movablepiece:hover {
-	border-color: red;
-	color: red;
+    border-color: red;
+    color: #006600;
+    text-decoration: underline;
 }
 
-/* grading styles -- for TAs only; not required by students */
-#gradingarea {
-	position: fixed;
-	right: 0px;
-	top: 0px;
-	z-index: 999999;
+#w3c {
+    text-align: right;
 }
 
-.valid {
-	background-color: #bfb;
+#w3c img {
+    border: none;
 }
-
-.invalid {
-	background-color: #f88;
-}
-
-/*
-init = function() {
-    var puzzleArea = document.getElementById('puzzlearea');
-    var divs = puzzleArea.getElementsByTagName("div");
-      
-    // initialize each piece
-    for (var i=0; i< divs.length; i++) {
-        var div = divs[i];
-        
-        // calculate x and y for this piece
-        var x = ((i % 4) * 100) ;
-        var y = (Math.floor(i / 4) * 100) ;
-
-        // set basic style and background
-        div.className = "puzzlepiece";
-        div.style.left = x + 'px';
-        div.style.top = y + 'px';
-        div.style.backgroundImage = 'url("background.jpg")';
-        div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
-        
-        // store x and y for later
-        div.x = x;
-        div.y = y; 
-    }        
-};
-*/
